@@ -13,11 +13,12 @@
         android:layout_height="wrap_content"
         android:text="@string/salute"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31"/>
+        app:layout_constraintVertical_bias="0.30"/>
 
     <Button
         android:id="@+id/button"
@@ -28,6 +29,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text"
-        app:layout_constraintVertical_bias="0.64"/>
+        app:layout_constraintVertical_bias="0.60"/>
 
 </android.support.constraint.ConstraintLayout>
