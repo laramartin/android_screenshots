@@ -4,7 +4,6 @@ locales=('en-US' 'es-ES')
 tests_apk_path="/Users/lara/dev/GitHub/android_screenshots/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk"
 app_apk_path="/Users/lara/dev/GitHub/android_screenshots/app/build/outputs/apk/debug/app-debug.apk"
 
-
 ./gradlew assembleDebug assembleAndroidTest
 
 rm -r /Users/lara/dev/GitHub/android_screenshots/fastlane/metadata/android/
@@ -35,8 +34,5 @@ do
         --locales=$i \
         --tests_apk_path="$tests_apk_path" \
         --app_apk_path="$app_apk_path"
-
     stop_clean_status_bar
 done
-
-
