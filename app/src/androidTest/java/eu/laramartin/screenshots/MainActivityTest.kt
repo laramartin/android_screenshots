@@ -2,7 +2,6 @@ package eu.laramartin.screenshots
 
 import android.os.SystemClock
 import android.support.test.espresso.Espresso.onView
-import android.support.test.espresso.action.ViewActions.click
 import android.support.test.espresso.assertion.ViewAssertions.matches
 import android.support.test.espresso.matcher.ViewMatchers.isDisplayed
 import android.support.test.espresso.matcher.ViewMatchers.withId
@@ -38,11 +37,8 @@ class MainActivityTest {
 
     @Test
     fun displayHello() {
-        SystemClock.sleep(1000)
-        Screengrab.screenshot("01_initial_screen")
-        onView(withId(R.id.button)).perform(click())
-        SystemClock.sleep(1000)
-        Screengrab.screenshot("02_displayed_text_screen")
-        onView(withId(R.id.container)).check(matches(isDisplayed()))
+        SystemClock.sleep(2000)
+        Screengrab.screenshot("01_hello_world_screen")
+        onView(withId(R.id.text)).check(matches(isDisplayed()))
     }
 }

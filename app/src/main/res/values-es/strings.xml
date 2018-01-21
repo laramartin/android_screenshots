@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Screenshots</string>
+    <string name="app_name">Pantallazos</string>
     <string name="salute">¡Hola mundo!</string>
-    <string name="button_display">Mostrar texto</string>
 </resources>

@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Screenshots</string>
     <string name="salute">Hello World!</string>
-    <string name="button_display">Display text</string>
 </resources>
