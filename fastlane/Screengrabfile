@@ -1,4 +1,2 @@
-locales ['en-US', 'es-ES']
-
 tests_apk_path '/Users/lara/dev/GitHub/android_screenshots/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk'
 app_apk_path '/Users/lara/dev/GitHub/android_screenshots/app/build/outputs/apk/debug/app-debug.apk'

@@ -14,7 +14,7 @@ function start_clean_status_bar {
     adb shell am broadcast -a com.android.systemui.demo -e command clock -e hhmm 1200
     # Display full mobile data without type
     adb shell am broadcast -a com.android.systemui.demo -e command network -e mobile show -e level 4 -e datatype false
-    adb shell am broadcast -a com.android.systemui.demo -e command network -e wifi show -e level 4
+    adb shell am broadcast -a com.android.systemui.demo -e command network -e wifi show -e level 4 -e fully true
     # Hide notifications
     adb shell am broadcast -a com.android.systemui.demo -e command notifications -e visible false
     # Show full battery but not in charging state
@@ -27,7 +27,6 @@ function stop_clean_status_bar {
 
 for i in "${locales[@]}"
 do
-    echo $i
     start_clean_status_bar
     fastlane screengrab \
         --locales=$i
