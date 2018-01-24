@@ -25,6 +25,10 @@ class MainActivityTest {
         @JvmStatic
         val localeTestRule = LocaleTestRule()
 
+        @get:ClassRule
+        @JvmStatic
+        val demoModeRule = DemoModeRule()
+
         @BeforeClass
         @JvmStatic
         fun beforeAll() {

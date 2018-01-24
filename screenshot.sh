@@ -29,10 +29,10 @@ function stop_clean_status_bar {
 
 for i in "${locales[@]}"
 do
-    start_clean_status_bar
+#    start_clean_status_bar
     fastlane screengrab \
         --locales=$i \
         --tests_apk_path="$tests_apk_path" \
         --app_apk_path="$app_apk_path"
-    stop_clean_status_bar
+#    stop_clean_status_bar
 done
